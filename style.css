@@ -1,0 +1,130 @@
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    
+    --darkGray: hsl(0, 0%, 59%);
+
+    font-size: 1.125em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--veryDarkDesaturatedBlue);
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), var(--darkCyan);
+    background-repeat: no-repeat;
+    background-position: -210px -500px, 780px 370px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card-wrapper {
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 15px;
+    background: url(images/bg-pattern-card.svg), white;
+    background-repeat: no-repeat;
+}
+
+img {
+    border: 5px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 87px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 1rem;
+    padding: 22px 0 2px;
+}
+
+span {
+    margin-left: 11px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 0.8rem;
+    padding: 8px 0 24px;
+    border-bottom: 1px solid var(--darkGray);
+    color: var(--darkGrayishBlue);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 32px;
+}
+
+td {
+    padding: 0 24px 0;
+}
+
+table tr:first-child {
+    font-weight: 700;
+}
+
+table tr:first-child td {
+    padding-top: 28px;
+}
+
+table tr:last-child {
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+    color: var(--darkGrayishBlue);
+
+}
+
+table tr:last-child td {
+    padding-bottom: 26px;
+    padding-top: 7px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-position: -760px -560px, 160px 280px;
+    }
+    
+    .card {
+        max-width: 326px;
+    }
+
+    table {
+        margin: 0;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; padding: 10px; }
+.attribution a { color: hsl(228, 57%, 25%); }
