@@ -73,6 +73,7 @@ h1 {
 span {
     margin-left: 11px;
     font-weight: 400;
+    color: var(--veryDarkDesaturatedBlue);
 }
 
 p {
