@@ -30,7 +30,7 @@ body {
     color: var(--veryDarkDesaturatedBlue);
     background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), var(--darkCyan);
     background-repeat: no-repeat;
-    background-position: -210px -500px, 780px 370px;
+    background-position: -287px -500px, 700px 370px;
 }
 
 .text-center {
